@@ -40,10 +40,10 @@ Only the first (parenthesized) match in the pattern will be decrypted.
 Then {cipherReplace} is substituted for the entire match, with the substring <@>
 replace with the decrypted first (parenthesized) match.
 
-Nota Bene: It can be tricky to the the patterns right, so that it will encrypt
+Nota Bene: It can be tricky to get the patterns right, so that it will encrypt
 the right things, and decrypt only what got encrypted, so test carefully!
 You might want to avoid curly braces in your obscur patterns, since this is the
-regular expresssion that matches the obscur pattern:
+regular expression that matches the obscur pattern:
 
     obscur ([0-9]+) {(.+?)} {(.*?<@>.*?)} {(.+?)} {(.*?<@>.*?)}
 
@@ -57,11 +57,11 @@ Suppose this is the obscur pattern:
 
 If encrypting,
 then on the next 4 lines,
-anything within 'a' & 'b' characters will be encnrypted,
+anything within 'a' & 'b' characters will be encrypted,
 and the 'a' & 'b' delimiters will be replaced by 'A' & 'B'.  For instance,
 aMoob might be replaced with Aem59GaP6Dhluuqn55FZffwV-s2nvkWrf5uPZ-9zUpynYB.
 
-If decrypting, then on the next 4 lines, anything within 'A' & 'B' characters will be encnrypted,
+If decrypting, then on the next 4 lines, anything within 'A' & 'B' characters will be encrypted,
 and the 'A' & 'B' delimiters will be replaced by 'a' & 'b'. For instance,
 Aem59GaP6Dhluuqn55FZffwV-s2nvkWrf5uPZ-9zUpynYB might be replaced with AMoob.
 
